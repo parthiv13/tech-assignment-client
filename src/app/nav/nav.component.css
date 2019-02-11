@@ -1,0 +1,42 @@
+:host {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 40px;
+    font-size: 15px;
+    /*color: rgba(75, 79, 78, 1);*/
+    color: #fff;
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.wrapper__options {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.logo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper__options--item {
+    margin: 0 20px 0 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
