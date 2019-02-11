@@ -1,8 +1,18 @@
 .wrapper {
-    background-color: #58af9b;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
     transition: 0.2s ease;
+}
+
+h2.counter {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    top: 30%;
+    text-align: center;
+    color: #58af9b;
+    font-size: 32px;
 }
 
 ul#countdown {
@@ -12,8 +22,8 @@ ul#countdown {
     width: 50%;
     margin: 0 auto;
     padding: 15px 0 20px 0;
-    color: #fff;
-    border: 1px solid #e1e2e4;
+    color: #58af9b;
+    border: 1px solid #58af9b;
     border-width: 1px 0;
     overflow: hidden;
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -31,7 +41,7 @@ ul#countdown li {
 }
 
 ul#countdown li .label {
-    color: #e0e2e6;
+    color: #58af9b;
     font-size: 18px;
     font-size: 1.5vw;
     text-transform: uppercase;

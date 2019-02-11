@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { NavComponent } from './nav/nav.component';
 import { CounterHomeComponent } from './counter-home/counter-home.component';
+import { MapBoxComponent } from './map-box/map-box.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { CounterHomeComponent } from './counter-home/counter-home.component';
     HomeComponent,
     UserComponent,
     NavComponent,
-    CounterHomeComponent
+    CounterHomeComponent,
+    MapBoxComponent,
+    DashboardComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

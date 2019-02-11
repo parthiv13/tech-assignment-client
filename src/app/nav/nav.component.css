@@ -1,5 +1,4 @@
 :host {
-    background: transparent;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -8,22 +7,30 @@
     /*color: rgba(75, 79, 78, 1);*/
     color: #fff;
     font-weight: 700;
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    background: #58af9b;
 }
 
 .wrapper {
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: #58af9b;
     height: 80px;
     width: 100%;
-    position: absolute;
     z-index: 999;
+    box-shadow: 0 0 2px #000;
 }
 
 .wrapper__options {
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
+    margin-right: 3vw;
 }
 
 .logo {
@@ -31,6 +38,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    margin-left: 3vw;
 }
 
 .wrapper__options--item {
@@ -39,4 +48,9 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+}
+
+a {
+    display: inline-block;
 }
