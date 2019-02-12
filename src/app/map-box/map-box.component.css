@@ -1,0 +1,9 @@
+:host {
+    margin-top: 80px;
+}
+
+.map {
+    height: calc( 100vh - 80px );
+    width: 100%;
+    top: 80px;
+}
