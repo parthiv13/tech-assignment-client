@@ -1,6 +1,6 @@
-# Client
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+# Tech-Assignment-Client
+Source Code for the project running at https://afcon-parthiv.herokuapp.com/
+App powered by Angular, and leaflet for Maps.
 
 ## Development server
 
