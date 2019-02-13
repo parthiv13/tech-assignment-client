@@ -3,6 +3,7 @@
   <div class="wrapper__options">
     <div class="wrapper__options--item"> <a routerLink="/highlights">Highlights</a> </div>
     <div class="wrapper__options--item"> <a routerLink="/map">Map View</a> </div>
-    <div class="wrapper__options--item"> <a routerLink="/auth">Login/Signup</a> </div>
+    <div class="wrapper__option--item" *ngIf="dt"><a href="">{{profile.name}}</a></div>
+    <div class="wrapper__options--item" *ngIf="!dt"> <a routerLink="/auth">Login/Signup</a> </div>
   </div>
 </div>

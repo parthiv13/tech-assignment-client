@@ -1,4 +1,13 @@
-<div class="map"
+<div class="wrapper">
+    <div class="map"
      leaflet
      [leafletOptions]="options">
+     <div *ngFor="let el of markers" [leafletLayer]="el"></div>
+    </div>
+    <div class="selectDate">
+        <div class="date-title">Choose date</div>
+        <div class="btn">
+            <button *ngFor="let bt of dates" (click)="ok(bt)">{{bt}}</button>
+        </div>
+    </div>
 </div>

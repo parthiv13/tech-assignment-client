@@ -39,12 +39,12 @@
             Create Account
           </div>
           <div class="form__body">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="password" placeholder="Password">
+            <input type="text" placeholder="Name" id="upname">
+            <input type="text" placeholder="Email" id="upemail">
+            <input type="password" placeholder="Password" id="uppass">
           </div>
           <div class="form__submit">
-            <button class="btn" routerLink="/user">SIGN UP</button>
+            <button class="btn" (click)="signup()">SIGN UP</button>
           </div>
         </div>
       </div>
@@ -54,11 +54,11 @@
             Sign In
           </div>
           <div class="form__body">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Password">
+            <input type="text" placeholder="Email" id="inemail">
+            <input type="password" placeholder="Password" id="inpass">
           </div>
           <div class="form__submit">
-            <button class="btn" routerLink="/user">SIGN IN</button>
+            <button class="btn" (click)="login()">SIGN IN</button>
           </div>
         </div>
       </div>

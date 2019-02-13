@@ -27,10 +27,6 @@ export class CounterHomeComponent implements OnInit {
 
       this.min = Math.floor(this.sec/(60));
       this.sec = this.sec - this.min * 60;
-      console.log(this.sec);
-      console.log(this.min)
-      console.log(this.hrs)
-      console.log(this.noDays)
       
       this.numberTransition('#days .number', this.noDays, 1000, 'easeOutQuad');
       this.numberTransition('#hours .number', this.hrs, 1000, 'easeOutQuad');
@@ -59,13 +55,13 @@ export class CounterHomeComponent implements OnInit {
         //console.log(this.sec);
 
         $("#days .number").text(this.noDays);
-        console.log(this.noDays);
+        
         $("#hrs").text(this.hrs);
-        console.log(this.hrs);
+        
         $("#min").text(this.min);
-        console.log(this.min);
+        //console.log(this.min);
         $("#sec").text(this.sec);
-        console.log(this.sec);
+        //console.log(this.sec);
 
       },1000);
     });

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { User } from './User';
 import { Observable, of, Observer } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,10 +11,21 @@ export class AuthService {
   constructor(
     private http: HttpClient
   ) { }
+  profile: Observable<User> = of(null);
+  private authLoginUrl = 'http://localhost:8080/api/login';
+  private authSignupUrl = 'http://localhost:8080/api/signup'
 
-  private authLoginUrl = 'http://localhost:8080/api/login'
+  signup(user: User): Observable<User> {
+    this.profile = this.http.post<User>(this.authSignupUrl, user);
+    return this.profile;
+  }
 
-  getUser(user: User): Observable<User> {
-    return this.http.post<User>(this.authLoginUrl, user);
+  login(user: User): Observable<User> {
+    this.profile = this.http.post<User>(this.authLoginUrl, user);
+    return this.profile;
+  }
+
+  getProfile(): Observable<User> {
+    return this.profile;
   }
 }
